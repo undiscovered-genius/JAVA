@@ -1,3 +1,3 @@
 # JAVA
-# Java Programming Masterclass for Software Developers
-
+# UDEMY - Java Programming Masterclass for Software Developers
+# Instructor - Tim Buchalka
