@@ -1,34 +1,17 @@
-public class HealthyBurger extends Hamburger{
-    private String healthyExtra1Name , healthyExtra2Name;
-    private double healthyExtra1Price, healthyExtra2Price;
-    
-    public HealthyBurger(String meat, double price){
-        super("Healthy",meat,price,"");
+public class Holden extends Car{
+    public Holden(int cylinders,String name){
+        super(cylinders,name);
     }
     
-    public void addHealthyAddition1(String addition1Name, double addition1Price){
-        this.healthyExtra1Name = addition1Name;
-        this.healthyExtra1Price = addition1Price;
+     public String startEngine(){
+        return ("Engine "+getName()+" is starting");
     }
     
-    public void addHealthyAddition2(String addition2Name, double addition2Price){
-        this.healthyExtra2Name = addition2Name;
-        this.healthyExtra2Price = addition2Price;
+    public String accelerate(){
+        return ("Car "+getName()+" is accelerating");
     }
     
-    public double itemizeHamburger() {
-        double burgerPrice = super.itemizeHamburger();
-
-        if (this.healthyExtra1Name != null) {
-            burgerPrice += this.healthyExtra1Price;
-            System.out.println("Added " + this.healthyExtra1Name + " for an extra " + this.healthyExtra1Price);
-        }
-
-        if (this.healthyExtra2Name != null) {
-            burgerPrice += this.healthyExtra2Price;
-            System.out.println("Added " + this.healthyExtra2Name + " for an extra " + this.healthyExtra2Price);
-        }
-
-        return burgerPrice;
+    public String brake(){
+        return ("Car "+getName()+" is braking");
     }
 }
